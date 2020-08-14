@@ -1,0 +1,76 @@
+
+.offer{
+    padding: 80px 0;
+    h2{
+        font-size: 2.6rem;
+        line-height: 2rem;
+        color: #383838;
+        margin-bottom: 2.2rem;
+        text-align: center;
+        font-weight: 800;
+        font-family: $default-font;
+    }
+    p{
+        font-size: 1.2rem;
+        color: #8A8A8A;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+}
+
+.offer-item{
+    .offer-item-icon{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin: 0 auto;
+        background-color: #383838;
+        margin-bottom: 3rem;
+
+        i{
+            font-size: 3.6rem;
+            padding: 12px;
+            color: #E4E4E4;
+
+        }
+    }
+    .offer-item-title{
+        font-size: 1.4rem;
+        color: #606060;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: $default-font;
+    }
+    .offer-item-description{
+        color: #7A7A7A;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        font-weight: 500;
+    }
+    a{
+        padding: 7px;
+        width: 80px;
+        height: 29px;
+        margin: 0 auto;
+        display: block;
+        border: 1px solid #DEDEDE;
+        font-size: 10px;
+        color: #8A8A8A;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        
+    }
+    &:hover{
+        transform: translateY(10px);
+        transition: 1s;
+    }
+}
+
+
+.offer-item:hover .offer-item-icon,
+.offer-item:hover a.btn {
+    background-color: #00A99D;
+   
+   
+}

@@ -1,0 +1,66 @@
+$default-font:'Raleway';
+$font-weight-regular:500;
+
+img{
+    max-width: 100%;
+  
+        
+}
+
+html{
+    font-size: 10px; // 1 rem
+    
+   
+}
+body{
+     font-family:  $default-font;
+   font-weight:  $font-weight-regular;
+}
+
+h6{
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #606060;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+     font-family:  $default-font;
+}
+p{
+   font-size: 1.4rem;
+   line-height: 2.4rem;
+   color: #7a7a7a;
+}
+.container{
+    width: 1170px;
+    max-width: 100%;
+}
+
+/*.title{
+    position: relative;
+    text-align: center;
+    & > span{
+        position: absolute;
+        left: 32%;
+        top: 8px;
+    }
+    
+}*/
+
+.section-title{
+    
+    h2{
+        color: #383838;
+        font-size: 2.6rem;
+        line-height: 2rem;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        color: #8A8A8A;
+        margin-bottom: 50px;
+    }
+}

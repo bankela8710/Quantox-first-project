@@ -1,0 +1,120 @@
+.features{
+
+
+    padding: 77px 0 0 0;
+    background-position: left;
+    background-size: cover;
+    overflow: hidden;
+
+    h2{
+        line-height: 2rem;
+        font-size: 2.6rem;
+        text-align: center;
+        color: #E4E4E4;
+        margin-bottom: 20px;
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .features-item{
+        margin-bottom: 67px;
+        text-align: center;
+        &:last-of-type{
+            margin-bottom: 0px;
+        }
+    }
+    .features-data{
+        p{
+            margin-bottom: 0px;
+        }
+        h6{
+            text-align: center;
+            color: #E4E4E4;
+        }
+
+    }
+}
+
+
+.features-item {
+    text-align: center;
+}
+
+.features-data > div:nth-child(1) > span:nth-child(1) {
+    font-size: 40px;
+    color: #00A99D;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media(min-width:450px){
+    .features{
+        .features-data{
+            display: flex;
+            h6{
+                color: #E4E4E4;
+                font-size: 1.4rem;
+                text-align: left;
+            }
+        }
+        .features-data > div:last-of-type{
+            padding: 0 0 0 30px;
+        }
+
+    }
+}
+@media(min-width:576px){
+    .features {
+        p{
+            margin-bottom: 90px;
+        }
+        .features-data{
+            p{
+                margin-bottom: 0px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.features .features-item .features-data span a img{
+    font-size: 40px;
+}
+@media(min-width:992px){
+    .features{
+        background-position: center;
+    }
+}
+
+
+//Features menu
+
+
+.features-menu{
+    padding: 80px 0;
+    .features-data{
+        h6{
+            color: #606060;
+            margin-bottom: 10px;
+            font-family: $default-font;
+        }
+        .light{
+            color: #AAAAAA;
+            font-size: 1.2rem;
+        }
+    }
+
+
+}
+
+
+
+
+.features-menu .features-data div:last-of-type{
+    padding: 0 0 0 19px;
+}
+
