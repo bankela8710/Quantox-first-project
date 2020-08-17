@@ -74,3 +74,24 @@
    
    
 }
+
+
+
+.title-section {
+.left-image{
+    font-size: 11px;
+}
+}
+  .title-section{
+h2{
+    padding: 0 5px;
+}
+}
+
+@media(min-width:576px){
+    .title-section {
+        h2{
+            padding: 0 20px;
+        }
+    }
+}

@@ -48,8 +48,8 @@
 }
 
 .member-team-social .cube{
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     display: inline-block;
     rotate:-45deg;
     //border: 1px solid #E4E4E4;
@@ -84,6 +84,7 @@
 
 }
 
+
 .member-team:hover .member-team-social{
     display: block;
     
@@ -111,6 +112,7 @@
 .members-text{
     padding: 77px 0 50px;
     background-color: #00A99D;
+    margin-top: -15px;
     .members-text-data {
         p{
              color: #E4E4E4;
@@ -120,7 +122,9 @@
         
     }
 }
-
+.members .cubes{
+    background-color: #383838;
+}
 .members-text-name{
     width: 247px;
     height: 40px;
@@ -132,4 +136,23 @@
     margin-bottom: 30px;
     line-height: 40px;
 }
+
+
+
+
+.member-team-social-hover{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+@media(min-width:992px){
+    .member-team-social .cube{
+        width: 21px;
+        height: 21px;
+        padding: 0 4px;
+    }
+}
+
 

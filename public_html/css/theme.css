@@ -12512,7 +12512,7 @@ p {
     display: inline-block;
     font-size: 1.8rem;
   }
-  h5:after {
+  /*    h5:after{
     content: "";
     width: 100px;
     height: 5px;
@@ -12521,8 +12521,9 @@ p {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     margin-bottom: 5px;
-  }
-  h5:before {
+   
+}
+    h5:before{
     content: "";
     width: 100px;
     height: 5px;
@@ -12531,7 +12532,8 @@ p {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     margin-bottom: 5px;
-  }
+    
+}*/
   .nav-item {
     margin-right: 10px;
   }
@@ -12568,28 +12570,29 @@ p {
   color: #00A99D;
 }
 
-h5:after {
-  content: "";
-  width: 30px;
-  height: 3px;
-  display: inline-block;
-  align-items: center;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  margin-bottom: 5px;
+/*
+ h5:after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    display: inline-block;
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-bottom: 5px;
+   
 }
-
-h5:before {
-  content: "";
-  width: 30px;
-  height: 3px;
-  display: inline-block;
-  align-items: center;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  margin-bottom: 5px;
-}
-
+    h5:before{
+    content: "";
+    width: 30px;
+    height: 3px;
+    display: inline-block;
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-bottom: 5px;
+    
+}*/
 .lead-data h6 {
   font-weight: 400;
   font-size: 1.2rem;
@@ -12640,6 +12643,7 @@ h5:before {
   }
   h5 {
     margin-bottom: 2rem;
+    margin-left: 93px;
   }
   h5:before {
     margin-right: 80px;
@@ -12699,6 +12703,12 @@ header .navbar .search-icon {
   background-color: #00A99D;
   color: #606060;
   transition: 0.5s linear;
+}
+
+@media (min-width: 768px) {
+  .nav-item:hover {
+    background-color: transparent;
+  }
 }
 
 .offer {
@@ -12776,11 +12786,26 @@ header .navbar .search-icon {
   background-color: #00A99D;
 }
 
+.title-section .left-image {
+  font-size: 11px;
+}
+
+.title-section h2 {
+  padding: 0 5px;
+}
+
+@media (min-width: 576px) {
+  .title-section h2 {
+    padding: 0 20px;
+  }
+}
+
 .features {
   padding: 77px 0 0 0;
   background-position: left;
   background-size: cover;
   overflow: hidden;
+  margin-top: -15px;
 }
 
 .features h2 {
@@ -12883,6 +12908,7 @@ header .navbar .search-icon {
 .skills {
   padding: 77px 0 70px;
   background-color: #383838;
+  margin-top: -15px;
 }
 
 .skills h2 {
@@ -13020,15 +13046,6 @@ header .navbar .search-icon {
   margin-bottom: 20px;
 }
 
-.works img {
-  max-width: 100%;
-  height: 250px;
-  width: 317px;
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
-}
-
 .works .works-wrapper .works-item:hover .works-item-hover {
   opacity: 0.8;
   display: block;
@@ -13083,9 +13100,33 @@ a:not([href]) {
   line-height: 2rem;
 }
 
+.works-wrapper img {
+  max-width: 100%;
+  height: 250px;
+  width: 317px;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.works .title-section .left-image {
+  font-size: 11px;
+}
+
+.works .title-section h2 {
+  padding: 0 5px;
+}
+
+@media (min-width: 576px) {
+  .works .title-section h2 {
+    padding: 0 20px;
+  }
+}
+
 .facts {
   padding: 77px 0 0px 0;
   background-color: #383838;
+  margin-top: -15px;
 }
 
 .facts h2 {
@@ -13244,8 +13285,8 @@ a:not([href]) {
 }
 
 .member-team-social .cube {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   display: inline-block;
   rotate: -45deg;
   border-radius: 4px;
@@ -13299,11 +13340,16 @@ a:not([href]) {
 .members-text {
   padding: 77px 0 50px;
   background-color: #00A99D;
+  margin-top: -15px;
 }
 
 .members-text .members-text-data p {
   color: #E4E4E4;
   font-size: 20px;
+}
+
+.members .cubes {
+  background-color: #383838;
 }
 
 .members-text-name {
@@ -13315,6 +13361,21 @@ a:not([href]) {
   margin: 0 auto;
   margin-bottom: 30px;
   line-height: 40px;
+}
+
+.member-team-social-hover {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 992px) {
+  .member-team-social .cube {
+    width: 21px;
+    height: 21px;
+    padding: 0 4px;
+  }
 }
 
 .clients {
