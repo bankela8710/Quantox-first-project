@@ -88,9 +88,18 @@
 .cubes{
    width: 30px;
    height: 30px;
-   rotate:45deg;
+   transform:rotate(45deg);
     //margin-top: -19px;
     margin-bottom: 70px;
    margin: 0 auto;
    background-color: #00A99D;
+}
+
+.contact-map iframe{
+    max-width: 100%;
+}
+
+footer .cubes svg{
+    transform: rotate(-45deg);
+    color: #E4E4E4;
 }

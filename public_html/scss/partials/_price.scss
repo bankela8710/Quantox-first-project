@@ -1,6 +1,6 @@
 
 .price{
-    padding: 80px 0 0 0;
+    padding: 30px 0 0 0;
     .price-item{
         border: 1px solid #DEDEDE;
         text-align: center;
@@ -112,3 +112,16 @@
 .purchase-title i{
     color:  #00A99D;
 } 
+
+@media(min-width:992px){
+    .price{
+        padding: 80px 0;
+    }
+}
+
+@media(min-width:768px){
+    .purchase-item{
+        display: flex;
+        justify-content: space-between;
+    }
+}
