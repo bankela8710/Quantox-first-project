@@ -18,3 +18,30 @@
     background-color: #333333;
     opacity: 0.9;
 }
+
+
+
+@media(min-width:992px){
+    .clients > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+position: absolute;
+right: 10px;
+top: 25%;
+background-color: #00A99D;
+}
+
+.clients > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+position: absolute;
+left: 10px;
+display: block;
+top: 25%;
+}
+
+.clients{
+    position: relative;
+}
+}
+
+
+.clients div.square:last-of-type{
+    background-color: #00A99D;
+}

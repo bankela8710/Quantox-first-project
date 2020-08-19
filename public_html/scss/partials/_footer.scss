@@ -48,9 +48,11 @@
     button{
         width: 100%;
         background-color: #00A99D;
+        border-radius: 5px;
         &:hover{
             color:  #00A99D;
             background-color:#383838;
+            
         }
     }
     .contact-map .map{

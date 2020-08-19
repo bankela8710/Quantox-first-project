@@ -1,19 +1,51 @@
 $(document).ready(function(){
     
-//    let num=$(".counter").val();
-//      console.log(num);
- $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
  
-//   if($('.slider').length > 0){
-//        $(".slider").owlCarousel({
-//            
-//      items:4 
-//        });
-//    }
-// 
+    
+    
+    //FOR PROGRES BAR
+    
+  $(function() {
+
+  $(".progress").each(function() {
+
+    var value = $(this).attr('data-value');
+    var left = $(this).find('.progress-left .progress-bar');
+    var right = $(this).find('.progress-right .progress-bar');
+
+    if (value > 0) {
+      if (value <= 50) {
+        right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)');
+      } else {
+        right.css('transform', 'rotate(180deg)');
+        left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)');
+      }
+    }
+
+  });
+
+  function percentageToDegrees(percentage) {
+
+    return percentage / 100 * 360;
+
+  }
+
+});
+
+
+
+
+
+
+   //for scroll
+   $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1000);
+      });
+    
     
 });
 

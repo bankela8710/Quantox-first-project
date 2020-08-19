@@ -191,3 +191,27 @@
     color: #E3E3E3;
     font-size: 20px;
 }
+
+.square {
+margin-top: 30px;
+text-align: center;
+width: 30px;
+height: 30px;
+
+border-radius: 4px;
+&:first-of-type{
+    margin-right: 4px;
+    background-color: #E4E4E4;
+    color: #00A99D;
+}
+&:last-of-type{
+    background-color: #383838;
+    color: #E4E4E4;
+}
+
+svg{
+    font-size: 20px;
+    height: 30px;
+  
+}
+}

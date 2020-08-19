@@ -9,7 +9,7 @@ img{
 
 html{
     font-size: 10px; // 1 rem
-    
+    scroll-behavior: smooth;
    
 }
 body{
@@ -50,12 +50,13 @@ p{
 
 .section-title{
     
-    h2{
+    h3{
         color: #383838;
         font-size: 2.6rem;
         line-height: 2rem;
         font-weight: 800;
         margin-bottom: 20px;
+        padding: 0 20px;
     }
     p{
         font-size: 1.6rem;
