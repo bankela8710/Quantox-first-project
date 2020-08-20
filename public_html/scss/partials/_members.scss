@@ -167,7 +167,10 @@
 @media(min-width:768px){
     .members-team{
         flex: 0 0 50%;
-        max-width: 50%;
+        max-width: 100%;
+    }
+    .owl-item.active{
+        background-color: transparent;
     }
 }
 @media(min-width:992px){
@@ -175,7 +178,7 @@
     padding: 80px 0;
     .members-team{
         flex: 0 0 25%;
-        max-width: 25%;
+        max-width: 100%;
         padding: 50px  0 80px 0;
     }
 }
@@ -214,4 +217,10 @@ svg{
     height: 30px;
   
 }
+}
+
+
+.member-slider .owl-dots .owl-dot.active span {
+
+background: #00A99D;
 }

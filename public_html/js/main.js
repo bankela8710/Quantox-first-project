@@ -47,5 +47,54 @@ $(document).ready(function(){
       });
     
     
+    
+    //OWL CAROUSEL
+    
+    if ($('.member-slider').length > 0) {
+    $('.member-slider').owlCarousel({
+        autoplay: true,
+        //loop: true,
+        items: 1,
+        responsive:{
+            768:{
+                items:2
+            },
+            992:{
+                items:4
+            }
+        }
+         
+
+    });
+}
+
+   if ($('.clients-slider').length > 0) {
+    $('.clients-slider').owlCarousel({
+        autoplay: true,
+        //loop: true,
+        items: 1,
+        responsive:{
+            576:{
+                items:2
+            },
+            768:{
+                items:4
+            }
+        }
+         
+
+    });
+}
+
+   
+   
+
+  $('.clients .owl-dot span').addClass('bi bi-caret-left-fill');
+   
+   
+ 
+   
+   
 });
+
 
