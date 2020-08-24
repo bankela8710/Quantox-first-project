@@ -1324,36 +1324,36 @@ and open the template in the editor.
 
                                                 <section class="clients">
                                                     <div class="container">
-                                                        <div class="row align-items-center text-center">
+                                                        <div class="row ">
                                                             <div class="clients-slider owl-carousel owl-theme">
-                                                            <div class="col-12 mb-5 col-sm-6 col-md-3 mb-md-0">
-                                                                <div class="clients-image">
-                                                                    <a>
-                                                                        <img src="img/clients/clients-image1.png" alt=""/>
-                                                                    </a>
+                                                                <div class="col-12 col-sm-6 col-md-3 mb-md-5">
+                                                                    <div class="clients-image">
+                                                                        <a>
+                                                                            <img class="img-responsive" src="img/clients/clients-image1.png" alt=""/>
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-12 mb-5 col-sm-6 col-md-3 mb-md-0">
-                                                                <div class="clients-image">
-                                                                    <a>
-                                                                        <img src="img/clients/clients-image2.png" alt=""/>
-                                                                    </a>
+                                                                <div class="col-12  col-sm-6 col-md-3 mb-md-5">
+                                                                    <div class="clients-image">
+                                                                        <a>
+                                                                            <img class="img-responsive" src="img/clients/clients-image2.png" alt=""/>
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-12 mb-5 col-sm-6 col-md-3 mb-md-0">
-                                                                <div class="clients-image text-center">
-                                                                    <a>
-                                                                        <img  src="img/clients/clients-image3.png" alt=""/>
-                                                                    </a>
+                                                                <div class="col-12  col-sm-6 col-md-3 mb-md-5">
+                                                                    <div class="clients-image text-center">
+                                                                        <a>
+                                                                            <img class="img-responsive" src="img/clients/clients-image3.png" alt=""/>
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-12 mb-5 col-sm-6 col-md-3 mb-md-0">
-                                                                <div class="clients-image">
-                                                                    <a>
-                                                                        <img src="img/clients/clients-image4.png" alt=""/>
-                                                                    </a>
+                                                                <div class="col-12  col-sm-6 col-md-3 mb-md-5">
+                                                                    <div class="clients-image">
+                                                                        <a>
+                                                                            <img class="img-responsive" src="img/clients/clients-image4.png" alt=""/>
+                                                                        </a>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
 
                                                             </div>
                                                         </div>
@@ -1609,16 +1609,19 @@ and open the template in the editor.
                                                         <div class="contact-form-item">
                                                             <form class="contact-form">
                                                                 <div class="form-group">
-                                                                    <input type="text" name="name" value="" placeholder="Name">
+                                                                    <input id="usname" type="text" name="name" value="" placeholder="Name">
+                                                                    <p id="invalid-name"></p>
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input type="text" name="name" value="" placeholder="Mail Address">
+                                                                    <input id="usemail" type="text" name="name" value="" placeholder="Mail Address">
+                                                                    <p id="invalid-email"></p>
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <textarea class="form-control" rows="4" name="message" placeholder="Message*"></textarea>
+                                                                    <textarea id="ustextarea" class="form-control" rows="4" name="message" placeholder="Message*"></textarea>
+                                                                    <p id="invalid-textarea"></p>
                                                                 </div>
                                                                 <div class="form-button mb-10">
-                                                                    <button class="btn btn-secondary text-uppercase py-2 px-5">send message</button>
+                                                                    <button type="button" class="btn btn-secondary text-uppercase py-2 px-5" onclick="checkForm();">send message</button>
                                                                 </div>
                                                             </form>
                                                         </div>
@@ -1650,5 +1653,8 @@ and open the template in the editor.
                                                 <!--font awesome icons-->
                                                 <script src="https://kit.fontawesome.com/85bd05dd45.js"></script>
                                                 <script src="js/main.js" type="text/javascript"></script>
+
+
+
                                                 </body>
                                                 </html>

@@ -1,6 +1,6 @@
 
 .clients{
-    padding: 50px 0;
+   // padding: 50px 0;
     background-color: #383838;
     .clients-image{
         background-color: #333333;
@@ -105,11 +105,17 @@ text-align: center;
 
 .clients-slider > div:nth-child(2) > button:nth-child(1) > span:nth-child(1) {
 position: absolute;
-top: 50%;
+top: 25%;
 left: 15px;
 }
 .clients-slider > div:nth-child(2) > button:nth-child(2) > span:nth-child(1) {
 position: absolute;
-top: 50%;
+top: 25%;
 right: 15px;
+}
+
+
+.owl-carousel .owl-item img {
+
+margin: 0 auto;
 }
