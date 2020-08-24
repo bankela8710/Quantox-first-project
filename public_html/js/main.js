@@ -91,7 +91,7 @@ $(document).ready(function () {
 
     $('.clients .owl-dot span').addClass('bi bi-caret-left-fill');
 
-   
+
 
 
 
@@ -112,73 +112,82 @@ function checkForm() {
     let errorName = " ";
 
     if (userName.length === 0) {
+        document.getElementById('usname').setAttribute('style', 'border:1px solid red');
+        document.getElementById('invalid-name').innerText = 'Please enter your name';
 
-        errorName +='Please enter your name \n';
-
+    } else if (userName.length < 5 || userName.length > 20) {
+        document.getElementById('usname').setAttribute('style', 'border:1px solid red');
+        document.getElementById('invalid-name').innerText = 'Name must have between 5 and 20 characters';
+    }else{
+        document.getElementById('usname').setAttribute('style', 'border:1px solid black');
+        document.getElementById('invalid-name').innerText =" ";
     }
 
-    if (userName.length < 3 || userName > 20) {
-       errorName +='Name must have between 5 and 20 characters \n';
-    }
-     
-     if(errorName.length > 0){
-         document.getElementById('usname').setAttribute('style','border:1px solid red');
-         document.getElementById('invalid-name').innerText= errorName;
-     }else{
-         document.getElementById('usname').setAttribute('style','border:1px solid #000');
-         document.getElementById('invalid-name').innerText=" ";
-     }
-    
-    
+
+
+
+
+
+//    if (userName.length < 5 || userName > 20) {
+//        //errorName +='Name must have between 5 and 20 characters \n';
+//        document.getElementById('usname').setAttribute('style', 'border:1px solid red');
+//        document.getElementById('invalid-name').innerText = 'Name must have between 5 and 20 characters';
+//       
+//    } 
+
+
+
+
     //check email
-    
+
     let userEmail = getValue('usemail');
     let errorEmail = " ";
-    
-    if(userEmail.length === 0){
-        errorEmail += 'Please enter your email \n';
-        
+
+    if (userEmail.length === 0) {
+        document.getElementById('usemail').setAttribute('style', 'border:1px solid red');
+        document.getElementById('invalid-email').innerText = 'Please enter your email';
+       
+    } else if (userEmail.length < 5)  {
+        document.getElementById('usemail').setAttribute('style', 'border:1px soli red');
+        document.getElementById('invalid-email').innerText = "Email must have more than 5 characters";
+    }else if(userEmail.search('@') < 2){
+        document.getElementById('usemail').setAttribute('style', 'border:1px soli red');
+        document.getElementById('invalid-email').innerText = 'Enter valid email';
+    }else{
+        document.getElementById('usemail').setAttribute('style', 'border:1px soli black');
+        document.getElementById('invalid-email').innerText = " ";
     }
-    if(userEmail.length < 5){
-        errorEmail += 'Email must have more than 5 characters \n';
-    }
-    if(userEmail.search('@') < 2){
-        errorEmail += 'Enter valid email';
-    }
-    
-     if(errorEmail.length > 0){
-         document.getElementById('usemail').setAttribute('style','border:1px solid red');
-         document.getElementById('invalid-email').innerText= errorEmail;
-     }else{
-         document.getElementById('usemail').setAttribute('style','border:1px solid #000');
-         document.getElementById('invalid-email').innerText=" ";
-     }
+
     
     
     
+
+
+
+
     //check textarea
-    
+
     var textArea = getValue('ustextarea');
     var errorText = " ";
-    
-    if(textArea.length === 0){
-        errorText += 'Please enter your message\n';
+
+    if (textArea.length === 0) {
+        //errorText += 'Please enter your message\n';
+         document.getElementById('ustextarea').setAttribute('style', 'border:1px solid red');
+        document.getElementById('invalid-textarea').innerText = 'Please enter your message';
+    }else if(textArea.length < 5 || textArea.length > 250){
+        document.getElementById('ustextarea').setAttribute('style', 'border:1px solid red');
+        document.getElementById('invalid-textarea').innerText = 'Message must have between 5 and 250 characters';
+    }else{
+        document.getElementById('ustextarea').setAttribute('style', 'border:1px solid black');
+        document.getElementById('invalid-textarea').innerText =" ";
     }
-    if(textArea.length < 5 || textArea.length > 250){
-        errorText += 'Message must have between 5 and 250 characters';
-    }
     
-     if(errorText.length > 0){
-         document.getElementById('ustextarea').setAttribute('style','border:1px solid red');
-         document.getElementById('invalid-textarea').innerText= errorText;
-     }else{
-         document.getElementById('ustextarea').setAttribute('style','border:1px solid #000');
-         document.getElementById('invalid-textarea').innerText=" ";
-     }
+    
+   
 }
 
 
-function getValue(id){
+function getValue(id) {
     return document.getElementById(id).value.trim();
 }
 
