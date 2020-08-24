@@ -113,12 +113,12 @@ function checkForm() {
 
     if (userName.length === 0) {
 
-        errorName +='Obavezno polje \n';
+        errorName +='Please enter your name \n';
 
     }
 
     if (userName.length < 3 || userName > 20) {
-       errorName +='Ime mora imati izmedju 3 i 20 karaktera \n';
+       errorName +='Name must have between 5 and 20 characters \n';
     }
      
      if(errorName.length > 0){
@@ -136,14 +136,14 @@ function checkForm() {
     let errorEmail = " ";
     
     if(userEmail.length === 0){
-        errorEmail += 'Email je obavezno polje \n';
+        errorEmail += 'Please enter your email \n';
         
     }
     if(userEmail.length < 5){
-        errorEmail += 'Email mora imati vise od 5 karaktera \n';
+        errorEmail += 'Email must have more than 5 characters \n';
     }
     if(userEmail.search('@') < 2){
-        errorEmail += 'Unesite validan email';
+        errorEmail += 'Enter valid email';
     }
     
      if(errorEmail.length > 0){
@@ -162,10 +162,10 @@ function checkForm() {
     var errorText = " ";
     
     if(textArea.length === 0){
-        errorText += 'Polje je obavezno \n';
+        errorText += 'Please enter your message\n';
     }
     if(textArea.length < 5 || textArea.length > 250){
-        errorText += 'Poruka mora da ima izmedju 5 i 250 karaktera';
+        errorText += 'Message must have between 5 and 250 characters';
     }
     
      if(errorText.length > 0){
